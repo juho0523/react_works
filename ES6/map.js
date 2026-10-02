@@ -9,8 +9,13 @@ const users = [
   { name: 'Charlie', age: 35 }
 ];
 
+console.log(`users 0번지 : ${users[0].name}`);
+
+
 const userNames = users.map(user => user.name);
 console.log(userNames); // ['Alice', 'Bob', 'Charlie']
+
+
 
 const userAges = users.map(user => user.age);
 console.log(userAges); // [25, 30, 35]

@@ -9,8 +9,15 @@ const users = [
   { name: 'Charlie', age: 35 }
 ];
 
+const user30s = users.filter(user => user.age >= 30);
+console.log(user30s.name); // [{ name: 'Bob', age: 30 }, { name: 'Charlie', age: 35 }]
+
 const userNames = users.map(user => user.name);
 console.log(userNames); // ['Alice', 'Bob', 'Charlie']
+
+users.forEach(user => {
+  console.log('foreach user name : ' + user.name);
+});
 
 const userAges = users.map(user => user.age);
 console.log(userAges); // [25, 30, 35]

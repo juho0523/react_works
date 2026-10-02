@@ -1,0 +1,9 @@
+.welcome{
+  color: #ff0000;
+}
+
+.list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
