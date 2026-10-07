@@ -1,3 +1,4 @@
+// useState<-리액에서 객체 상태관리를 위함
 import { useState } from 'react';
 import DrinkList from './DrinkList';
 
