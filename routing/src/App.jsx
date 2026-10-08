@@ -8,6 +8,7 @@ import { useState } from 'react'
 import './App.css'
 import SignUp from './pages/SignUp'
 import SignIn from './pages/SignIn'
+import Header from './layout/Header'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,12 +17,7 @@ function App() {
     <>
       <section className='app'>
         <BrowserRouter>
-          <div className='header'>
-            <Link to="/">Home</Link>
-            <Link to="/signup">회원가입</Link>
-            <Link to="/signin">로그인</Link>
-
-          </div>
+          <Header />
 
           <div className='content'>
             <Routes>
