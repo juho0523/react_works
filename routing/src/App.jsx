@@ -9,6 +9,8 @@ import './App.css'
 import SignUp from './pages/SignUp'
 import SignIn from './pages/SignIn'
 import Header from './layout/Header'
+import Board from './pages/Board'
+import BoardList from './pages/BoardList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +26,8 @@ function App() {
               <Route path='/' element={<Main />} />
               <Route path='/signup' element={<SignUp />} />
               <Route path='/signin' element={<SignIn />} />
+              <Route path="/board" element={<BoardList />} />
+              <Route path="/board/:id" element={<Board />} />
             </Routes>
           </div>
         </BrowserRouter>
