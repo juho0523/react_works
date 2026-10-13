@@ -10,7 +10,6 @@ const Main = () => {
                     <img src={mainPhoto} alt="main photo" />
                 </div>
             </section>
-
         </div>
     )
 }

@@ -20,8 +20,8 @@
 .table-list {width: 60%; margin: 0 auto; border-collapse: collapse;}
 .table-list th, .table-list td {border: 1px solid #ddd;padding: 8px;}
 .table-list th {text-align: center; background-color: #f2f2f2;}
-.product-list .btn-add {text-align: right; margin-top: 20px; margin-right: 20%;}
-.product-list .btn-add button {
+.btn-add {text-align: right; margin-top: 20px; margin-right: 20%;}
+.btn-add button {
   padding: 10px 20px;
   border-radius: 4px;
   background-color: #007bff;
@@ -83,3 +83,4 @@
 .main-img{
   margin-top: 20px;
 }
+

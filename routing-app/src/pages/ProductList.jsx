@@ -24,7 +24,11 @@ const ProductList = () => {
                     ))}
                 </tbody>
             </table>
-            <Link to="/add-product">상품 등록</Link>
+            <div className="btn-add">
+                <Link to="/add-product">
+                    <button type="button">상품 등록</button>
+                </Link>
+            </div>
         </div>
     )
 }
