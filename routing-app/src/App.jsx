@@ -9,21 +9,34 @@ import Header from './layouts/Header'
 import ProductList from './pages/ProductList'
 import ProductInfo from './pages/ProductInfo'
 import AddProduct from './pages/AddProduct'
+import SignIn from './users/SignIn'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [username, setUsername] = useState('')
+
+  const handleLogin = (username) => {
+    setIsLoggedIn(true)
+    setUsername(username)
+  }
+
+  const handleLogout = () => {
+    setIsLoggedIn(false)
+    setUsername('')
+  }
 
   return (
     <div className='app'>
 
       <BrowserRouter>
-        <Header />
+        <Header isLoggedIn={isLoggedIn} username={username} onLogout={handleLogout}/>
         <div className='container'>
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/products" element={<ProductList />} />
             <Route path='/products/:id' element={<ProductInfo />} />
             <Route path='/add-product' element={<AddProduct />} />
+            <Route path='/signin' element={<SignIn onLogin={handleLogin}/>} />
           </Routes>
         </div>
       </BrowserRouter>

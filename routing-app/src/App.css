@@ -84,3 +84,41 @@
   margin-top: 20px;
 }
 
+.sign-in form{
+  width: 30%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+
+.sign-in form input{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.sign-in form button {
+  width: 100%;
+  padding: 8px 12px;
+  margin-left: 3%;
+}
+
+.header-user {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  margin-left: 12px;
+}
+.logout-btn {
+  padding: 6px 12px;
+  border: 1px solid #ff9f1c;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ff9f1c;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  background-color: #ff9f1c;
+  color: #333;
+}
