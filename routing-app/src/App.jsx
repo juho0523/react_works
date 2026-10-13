@@ -10,6 +10,7 @@ import ProductList from './pages/ProductList'
 import ProductInfo from './pages/ProductInfo'
 import AddProduct from './pages/AddProduct'
 import SignIn from './users/SignIn'
+import SignUp from './users/SignUp'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -37,6 +38,7 @@ function App() {
             <Route path='/products/:id' element={<ProductInfo />} />
             <Route path='/add-product' element={<AddProduct />} />
             <Route path='/signin' element={<SignIn onLogin={handleLogin}/>} />
+            <Route path='/signup' element={<SignUp />} />
           </Routes>
         </div>
       </BrowserRouter>

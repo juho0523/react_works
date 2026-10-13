@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import users from '../data/users';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const SignIn = ({onLogin}) => {
     const [formData, setFormData] = useState({
@@ -100,6 +101,9 @@ const SignIn = ({onLogin}) => {
                     환영합니다
                 </p>
             )} */}
+            <p className='signup-link'>
+                아직 계정이 없으신가요<Link to='/signup'>회원가입</Link>
+            </p>
 
             {result === "fail" && (
                 <p className={visible ? "message" : "message fade-out"}>
