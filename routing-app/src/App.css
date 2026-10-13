@@ -79,3 +79,7 @@
 .add-product form button[type="submit"] {margin-right: 10px;}
 .add-product form button[type="button"] {background-color: #6c757d}
 .add-product form button[type="button"]:hover {background-color: #5a6268;}
+
+.main-img{
+  margin-top: 20px;
+}
