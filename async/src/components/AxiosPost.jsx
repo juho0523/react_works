@@ -14,6 +14,11 @@ const AxiosPost = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        if(title.trim() === ""){
+            alert('데이터 입력바람')
+            return;
+        }
+
         if(isSubmitting.current) return;
 
         isSubmitting.current = true;
@@ -23,6 +28,8 @@ const AxiosPost = () => {
             completed: false
         })
         .then((response) => {
+            
+
             console.log("추가된 데이터: ", response.data);
             alert("추가 완료")
             setTitle("")
